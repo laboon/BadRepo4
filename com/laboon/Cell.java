@@ -67,10 +67,13 @@ public class Cell {
 		char toReturn = ' ';
 		if (_state == State.DEAD) {
 			toReturn = ' ';
+			// change
 		} else if (_state == State.ALIVE) {
 			toReturn = '*';
+			//cahnge
 		} else {
 			toReturn = ' ';
+			//change
 		}
 		return toReturn;
 	}

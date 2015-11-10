@@ -5,7 +5,9 @@ public class JavaLife {
 	/**
 	 * 
 	 * @param size Size of a world
+	 * change
 	 * @param seed Random number seed for RNG
+	 * change
 	 * @param percent Percent of cells alive at beginning
 	 * @param maxIterations Maximum number of iterations
 	 */
@@ -14,8 +16,10 @@ public class JavaLife {
 		World w = new World(size, seed, percent);
 		System.out.println("Initial Configuration:");
 		System.out.println(  w.toString()  );
+		// it's a damn change
 		for (int j=0; j < maxIterations; j++) {
 			w   = w.iterate();
+			//it's anothe damn change
 			System.out.println("Iteration " + (j + 1) + ":");
 			System.out.println(w.toString());
 		}
