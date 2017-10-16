@@ -67,7 +67,7 @@ public class Cell {
      * @return Character representation of the cell's state
      */
 	
-    public char getStateRep() {
+public char getStateRep() {
 	char toReturn = ' ';
 	if (_state == State.DEAD) {
 	    toReturn = '.';
@@ -77,7 +77,7 @@ public class Cell {
 	    toReturn = ' ';
 	}
 	return toReturn;
-    }
+}
 	
     /**
      * Constructor for a new cell.
