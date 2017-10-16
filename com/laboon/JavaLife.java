@@ -1,3 +1,4 @@
+//comment 2
 package com.laboon;
 
 public class JavaLife {
