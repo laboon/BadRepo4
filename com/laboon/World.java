@@ -1,6 +1,7 @@
 package com.laboon;
 
 import java.util.Random;
+import java.lang.StringBuilder;
 
 public class World {
 
@@ -109,26 +110,26 @@ public class World {
 	return new World(newCells, _rng);
     }
 
-    /**
-     * Convert this World to a string for display.
-     * @return String representation of world
-     */
+	/**
+	 * Convert this World to a string for display.
+	 * @return String representation of world
+	 */
 	
-    public String toString() {
-	String toReturn = "  ";
-	for (int j= 0; j < _size; j++) {
-	    toReturn += String.valueOf(j % 10);
-	}
-	toReturn += "\n";
-	for (int j = 0; j < _size; j++ ) {
-	    toReturn += String.valueOf(j % 10) + " ";
-	    for (int k = 0; k < _size; k++) {
-		toReturn += (_world[j][k].getStateRep());
-	    }
-	    toReturn += "\n";
-	}
-	return toReturn;
-    }
+	public String toString() {
+        StringBuilder toReturn = new StringBuilder("  ");
+		for (int j= 0; j < _size; j++) {
+			toReturn.append(String.valueOf(j % 10));
+		}
+		toReturn.append("\n");
+		for (int j = 0; j < _size; j++ ) {
+			toReturn.append(String.valueOf(j % 10) + " ");
+			for (int k = 0; k < _size; k++) {
+				toReturn.append(_world[j][k].getStateRep());
+			}
+			toReturn.append("\n");
+		}
+		return toReturn.toString();
+   }
 	
     /**
      * Generate initial game board.
