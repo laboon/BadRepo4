@@ -67,6 +67,18 @@ public class Cell {
      * @return Character representation of the cell's state
      */
 	
+<<<<<<< HEAD
+	public char getStateRep() {
+		char toReturn = ' ';
+		if (_state == State.DEAD) {
+			toReturn = '.';
+		} else if (_state == State.ALIVE) {
+			toReturn = 'X';
+		} else {
+			toReturn = '?';
+		}
+		return toReturn;
+=======
     public char getStateRep() {
 	char toReturn = ' ';
 	if (_state == State.DEAD) {
@@ -75,6 +87,7 @@ public class Cell {
 	    toReturn = '*';
 	} else {
 	    toReturn = ' ';
+>>>>>>> master
 	}
 	return toReturn;
     }
